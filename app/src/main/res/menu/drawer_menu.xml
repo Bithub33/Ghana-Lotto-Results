@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dashboard">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/nav_home"
+                    android:title="Home"
+                    android:icon="@drawable/ic_baseline_home_24">
+
+                </item>
+
+                <item
+                    android:id="@+id/nav_invite"
+                    android:checkableBehavior="single"
+                    android:title="Remove ads"
+                    android:icon="@drawable/baseline_shopping"/>
+
+                <item
+                    android:id="@+id/nav_predict"
+                    android:title="Free Prediction"
+                    android:icon="@drawable/ic_predict">
+                </item>
+
+                <item
+                    android:id="@+id/nav_groups"
+                    android:title="New Group"
+                    android:icon="@drawable/ic_group"
+                    android:visible="false">
+                </item>
+
+                <item
+                    android:id="@+id/nav_admin"
+                    android:title="Admin"
+                    android:visible="false"
+                    android:icon="@drawable/ic_invite">
+
+                </item>
+            </group>
+        </menu>
+    </item>
+
+    <!--item android:title="Play">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/nav_play"
+                    android:title="NLA 5/90"
+                    android:icon="@drawable/ic_baseline_play_arrow_24">
+                </item>
+            </group>
+        </menu>
+    </item-->
+
+    <item android:title="Results History">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/nav_monday"
+                    android:title="Monday Special"
+                    android:icon="@drawable/ic_baseline_history_24">
+                </item>
+
+                <item
+                    android:id="@+id/nav_Tuesday"
+                    android:title="Lucky Tuesday"
+                    android:icon="@drawable/ic_baseline_history_24">
+
+                </item>
+
+                <item
+                    android:id="@+id/nav_Wednesday"
+                    android:title="Midweek"
+                    android:icon="@drawable/ic_baseline_history_24">
+
+                </item>
+
+                <item
+                    android:id="@+id/nav_Thursday"
+                    android:title="Fortune Thursday"
+                    android:icon="@drawable/ic_baseline_history_24">
+
+                </item>
+
+                <item
+                    android:id="@+id/nav_Friday"
+                    android:title="Friday Bonanza"
+                    android:icon="@drawable/ic_baseline_history_24">
+
+                </item>
+
+                <item
+                    android:id="@+id/nav_Saturday"
+                    android:title="National Weekly"
+                    android:icon="@drawable/ic_baseline_history_24">
+
+                </item>
+
+                <item
+                    android:id="@+id/nav_Sunday"
+                    android:title="Sunday Aseda"
+                    android:icon="@drawable/ic_baseline_history_24">
+
+                </item>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group>
+
+                <item
+                    android:checkableBehavior="single"
+                    android:id="@+id/nav_share"
+                    android:title="Share"
+                    android:icon="@drawable/ic_share"/>
+
+                <item
+                    android:checkableBehavior="single"
+                    android:id="@+id/nav_rate"
+                    android:title="Rate App"
+                    android:icon="@drawable/ic_rate"/>
+            </group>
+        </menu>
+    </item>
+</menu>

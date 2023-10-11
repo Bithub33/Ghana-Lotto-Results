@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/msg_lay"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:id="@+id/send_lay"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/profile_image"
+            android:id="@+id/sender_image"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edith"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="#121111"
+                android:id="@+id/sender_name"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="13dp"
+                android:id="@+id/send_pad"
+                android:elevation="2dp"
+                android:background="@drawable/receiver_msg_layout">
+
+                <TextView
+                    android:id="@+id/sender_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="250dp"
+                    android:text="fdgdggdgdgdgdggdggdgdggfsdgdgffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddfdfdf"
+                    android:textAlignment="gravity"
+                    android:textColor="#090303"
+                    android:textSize="17sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:id="@+id/custom_image_left"
+                    app:shapeAppearanceOverlay="@style/roundedSquare"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="time"
+                    android:textSize="11sp"
+                    android:textColor="#676161"
+                    android:id="@+id/sender_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="time"
+                    android:textSize="11sp"
+                    android:textColor="#676161"
+                    android:id="@+id/sender_date"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/copy_del_lay"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Copy"
+                        android:id="@+id/copy"
+                        android:textColor="#386F88"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/delete"
+                        android:textStyle="bold"
+                        android:textColor="#386F88"
+                        android:text="Delete"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rec_lay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:id="@+id/rec_pad"
+            android:layout_gravity="end"
+            android:elevation="2dp"
+            android:background="@drawable/sender_messages_layout">
+
+            <TextView
+                android:id="@+id/custom_receiver_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="250dp"
+                android:text="fdgdggdgdgdgdggdggdgdggfsdgdgffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffddfdfdf"
+                android:textColor="#090303"
+                android:textSize="17sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:id="@+id/custom_image_right"
+                app:shapeAppearanceOverlay="@style/roundedSquare"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="#C64343"
+            android:id="@+id/msg_delivered"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="time"
+            android:textSize="11sp"
+            android:textColor="#676161"
+            android:id="@+id/receiver_time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="time"
+            android:textSize="11sp"
+            android:textColor="#676161"
+            android:id="@+id/receiver_date"/>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy_del_lay2"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copy"
+                    android:id="@+id/copy2"
+                    android:textColor="#386F88"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/delete2"
+                    android:textStyle="bold"
+                    android:textColor="#386F88"
+                    android:text="Delete"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

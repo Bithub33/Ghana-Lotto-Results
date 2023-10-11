@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/foreground_overlay.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <!-- Set the foreground color for the pressed state (e.g., semi-transparent red) -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/your_foreground_color_with_alpha" /> <!-- Alpha: 50%, Red: 100%, Green: 0%, Blue: 0% -->
+        </shape>
+    </item>
+    <item>
+        <!-- Set the default foreground (no color) for other states -->
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Transparent color -->
+        </shape>
+    </item>
+</selector>
+

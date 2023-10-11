@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.VipActivity">
+
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/vip_appbar">
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/rel"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select what you would like to buy:"
+                android:textColor="#2C2C2C"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel"
+            android:layout_above="@+id/ad_view_container"
+            android:scrollbarSize="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:id="@+id/main_lay"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/ad_lay"
+                    android:elevation="3dp"
+                    android:background="@drawable/vip_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove all Ads Subscription"
+                        android:textSize="17sp"
+                        android:textColor="#1C1B1B"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price:"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:id="@+id/ad_price"
+                            android:text="GHC9.00"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="every 1 month"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Remove the ads from the app with 1 month subscription."
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Cancel Subscription any time on Google Play"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/ad_lay2"
+                    android:layout_marginTop="10dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/vip_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove all Ads Subscription"
+                        android:textSize="17sp"
+                        android:textColor="#1C1B1B"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price:"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:id="@+id/ad_price2"
+                            android:text="GHC9.00"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="every 3 months"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Remove the ads from the app with 3 months subscription."
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Cancel Subscription any time on Google Play"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/ad_lay3"
+                    android:layout_marginTop="10dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/vip_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove all Ads Subscription"
+                        android:textSize="17sp"
+                        android:textColor="#1C1B1B"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price:"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:id="@+id/ad_price3"
+                            android:text="GHC9.00"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="every 6 months"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Remove the ads from the app with 6 months subscription."
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Cancel Subscription any time on Google Play"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/ad_lay4"
+                    android:layout_marginTop="10dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/vip_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove all Ads Subscription"
+                        android:textSize="17sp"
+                        android:textColor="#1C1B1B"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price:"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:id="@+id/ad_price4"
+                            android:text="GHC9.00"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="per year"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Remove the ads from the app with yearly subscription."
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Cancel Subscription any time on Google Play"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/ad_lay5"
+                    android:layout_marginTop="10dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/vip_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Support us with your donations"
+                        android:textSize="17sp"
+                        android:textColor="#1C1B1B"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price:"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:id="@+id/ad_price5"
+                            android:text="GHC9.00"
+                            android:textSize="13sp"
+                            android:textColor="#1C1B1B"/>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#1C1B1B"
+                        android:text="Donate to our hardworking team to encourage us to continue working on the app."
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="#1C40F4"
+            android:id="@+id/circle_loading"
+            android:indeterminateTintMode="src_in"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

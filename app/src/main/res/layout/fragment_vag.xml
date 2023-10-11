@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAF7F7"
+    tools:context=".Fragments.VagFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler"/>
+
+
+    </LinearLayout>
+
+    <!--ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:id="@+id/scroll"
+        android:visibility="gone"
+        android:hardwareAccelerated="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/mon_lay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vag"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Monday"
+                        android:textStyle="bold"
+                        android:textSize="15.5sp"/>
+
+                    <TextView
+                        android:id="@+id/mon_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="20/5/2022"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_background"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/results_layout8"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text=""
+                                android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="0dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:id="@+id/mon_lotto_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="-"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/mon_lotto_2"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/mon_lotto_3"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/mon_lotto_4"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/mon_lotto_5"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template"
+                android:visibility="gone"
+                app:gnt_template_type="@layout/gnt_small_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tues_lay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vag"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Tuesday"
+                        android:textStyle="bold"
+                        android:textSize="15.5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="20/5/2022"
+                        android:id="@+id/tuesday_date"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_background"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/results_layout2"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text=""
+                                android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="0dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:id="@+id/tuesday_lotto_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="-"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/tuesday_lotto_2"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/tuesday_lotto_3"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/tuesday_lotto_4"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/tuesday_lotto_5"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/wed_lay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vag"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Wednesday"
+                        android:textStyle="bold"
+                        android:textSize="15.5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="20/5/2022"
+                        android:id="@+id/wednesday_date"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_background"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/results_layout3"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text=""
+                                android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="0dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:id="@+id/midweek_lotto_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="-"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/midweek_lotto_2"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/midweek_lotto_3"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/midweek_lotto_4"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/midweek_lotto_5"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template2"
+                android:visibility="gone"
+                app:gnt_template_type="@layout/gnt_medium_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/thurs_lay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vag"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Thursday"
+                        android:textStyle="bold"
+                        android:textSize="15.5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="20/5/2022"
+                        android:id="@+id/thursday_date"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_background"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/results_layout4"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text=""
+                                android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="0dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:id="@+id/thursday_lotto_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="-"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/thursday_lotto_2"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/thursday_lotto_3"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/thursday_lotto_4"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/thursday_lotto_5"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template3"
+                app:gnt_template_type="@layout/gnt_small_template_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/fri_lay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vag"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Friday"
+                        android:textStyle="bold"
+                        android:textSize="15.5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="20/5/2022"
+                        android:id="@+id/friday_date"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_background"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/results_layout5"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text=""
+                                android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="0dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/friday_lotto_1"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/friday_lotto_2"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/friday_lotto_3"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/friday_lotto_4"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/circle_holder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:layout_margin="5dp"
+                                        android:textStyle="bold"
+                                        android:layout_centerInParent="true"
+                                        android:textColor="@color/white"
+                                        android:id="@+id/friday_lotto_5"
+                                        android:textSize="16sp"/>
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView-->
+
+</FrameLayout>

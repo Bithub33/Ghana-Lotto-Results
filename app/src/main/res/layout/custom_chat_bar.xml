@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:contentInsetStart="4dp"
+    android:background="#CC2C2C"
+    android:elevation="4dp"
+    app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:id="@+id/app_bar_lay"
+        android:visibility="visible"
+        android:padding="3dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_arrow_back_layout"
+            android:padding="6dp"
+            android:id="@+id/arrowBack">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="0dp"
+                android:background="@drawable/chat_arrow_back_layout"
+                android:src="@drawable/arrow_back"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"/>
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@id/arrowBack"
+            android:layout_marginStart="5dp"
+            android:id="@+id/custom_pImage"
+            android:src="@drawable/profile_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/custom_pImage"
+            android:layout_toStartOf="@+id/g_cord"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:ellipsize="end"
+                android:maxLength="23"
+                android:maxLines="1"
+                android:layout_gravity="center_horizontal"
+                android:text="Terry Lotto"
+                android:id="@+id/custom_friend"
+                android:textColor="@android:color/background_light"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1sp"
+                    android:textAlignment="center"
+                    android:ellipsize="end"
+                    android:maxLength="30"
+                    android:text="Members:"
+                    android:textColor="@android:color/background_light"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1sp"
+                    android:layout_marginStart="1dp"
+                    android:textAlignment="center"
+                    android:ellipsize="end"
+                    android:maxLength="30"
+                    android:text="1"
+                    android:id="@+id/custom_friend_last_seen"
+                    android:textColor="@android:color/background_light"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:visibility="invisible"
+            android:padding="2dp"
+            android:id="@+id/g_cord"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_group"
+                android:id="@+id/g_icon"/>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="8sp"
+                app:layout_anchorGravity="top|right"
+                app:layout_anchor="@id/g_icon"
+                android:text=""
+                android:id="@+id/req_count"
+                android:background="@drawable/circle_holder"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/copy_del_layout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_arrow_back_layout"
+            android:padding="6dp"
+            android:id="@+id/arrowBack2">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="0dp"
+                android:src="@drawable/arrow_back"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/arrowBack2"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:id="@+id/count"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:background="@drawable/chat_arrow_back_layout"
+                android:id="@+id/copy">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/file_copy"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:background="@drawable/chat_arrow_back_layout"
+                android:layout_marginStart="40dp"
+                android:id="@+id/delete">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/delete"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

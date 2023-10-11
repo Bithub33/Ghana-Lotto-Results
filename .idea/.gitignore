@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+gradle.properties
+local.properties
+app/google-services.json
+app/src/res/values/strings.xml

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_group_info"
+        android:title="Group Info"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/nav_request"
+        android:title="Requests"
+        android:visible="false"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/nav_members"
+        android:title="Members"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/nav_exit"
+        android:title="Exit group"
+        app:showAsAction="never">
+    </item>
+
+</menu>

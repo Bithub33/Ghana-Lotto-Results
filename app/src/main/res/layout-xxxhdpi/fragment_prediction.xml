@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragments.PredictionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="0dp"
+            android:id="@+id/scroll"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/ad_view_container"
+            android:visibility="gone"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            app:reverseLayout="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_above="@id/ad_view_container"
+                android:id="@+id/options_lay"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:elevation="7dp"
+                    android:padding="17dp"
+                    android:background="@drawable/pred_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Free Prediction"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/free_des"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="11sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:elevation="5dp"
+                        android:id="@+id/free_lay"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ped_but_backg"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Check"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:elevation="7dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="17dp"
+                    android:background="@drawable/pred_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Remove Ads"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/vip_des"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="11sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:elevation="5dp"
+                        android:id="@+id/vip_lay"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ped_but_backg"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Check"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:elevation="7dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="17dp"
+                    android:background="@drawable/pred_backg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Sure Banker"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/watch_des"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="11sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:elevation="5dp"
+                        android:id="@+id/watch_lay"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ped_but_backg"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="63dp"
+                            android:layout_height="37dp"
+                            android:src="@drawable/play"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="#1C40F4"
+        android:id="@+id/circle_loading"
+        android:indeterminateTintMode="src_in"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

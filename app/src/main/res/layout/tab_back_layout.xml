@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups"
+            android:textColor="#ffffff"
+            android:id="@+id/text"
+            android:textSize="17sp"
+            android:textStyle="normal"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabs"
+            android:visibility="gone"
+            android:layout_toEndOf="@id/text">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emp"/>
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:text="10"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:background="@drawable/circle_holder"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="visible"
+                android:id="@+id/msgCount"
+                app:layout_anchor="@id/emp"
+                app:layout_anchorGravity="top|left"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

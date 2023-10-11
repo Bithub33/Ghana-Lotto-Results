@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GroupMembersActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/members_bar">
+    </include>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/members_bar"
+        android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mem_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateTint="#A1A5A3"
+                android:id="@+id/circle_loading2"
+                android:indeterminateTintMode="src_in"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="#1C40F4"
+        android:id="@+id/circle_loading"
+        android:indeterminateTintMode="src_in"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

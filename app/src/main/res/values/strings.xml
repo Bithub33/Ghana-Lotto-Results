@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Ghana Lotto Results</string>
+    <string name="open_nav">Open Navi Drawer</string>
+    <string name="close_nav">Close Navi Drawer</string>
+    <string name="todo">TODO</string>
+
+    <string name="app_id">ca-app-pub-1535090114126115~6214573845</string>
+
+    <string name="banner_add_id">ca-app-pub-1535090114126115/6436921698</string>
+    <string name="banner_add_id_1_1">ca-app-pub-1535090114126115/4932268333</string>
+    <string name="banner_add_id_1_2">ca-app-pub-1535090114126115/7366859983</string>
+    <string name="banner_add_id_1_3">ca-app-pub-1535090114126115/7777541064</string>
+    <string name="banner_add_id_1_4">ca-app-pub-1535090114126115/9032406235</string>
+
+
+    <string name="banner_add_id_2">ca-app-pub-1535090114126115/3633566904</string>
+    <string name="banner_add_id_2_1">ca-app-pub-1535090114126115/8238509400</string>
+    <string name="banner_add_id_2_2">ca-app-pub-1535090114126115/8256968506</string>
+    <string name="banner_add_id_2_3">ca-app-pub-1535090114126115/9557296672</string>
+    <string name="banner_add_id_2_4">ca-app-pub-1535090114126115/7899902945</string>
+
+
+    <string name="banner_add_id_3">ca-app-pub-1535090114126115/1362626780</string>
+    <string name="banner_add_id_3_1">ca-app-pub-1535090114126115/2219895969</string>
+    <string name="banner_add_id_3_2">ca-app-pub-1535090114126115/3233594734</string>
+    <string name="banner_add_id_3_3">ca-app-pub-1535090114126115/3740953089</string>
+    <string name="banner_add_id_3_4">ca-app-pub-1535090114126115/9223977924</string>
+
+
+    <string name="Interstitial_add_id">ca-app-pub-1535090114126115/8132764285</string>
+    <string name="Interstitial_add_id_2">ca-app-pub-1535090114126115/5302674125</string>
+    <string name="Interstitial_add_id_3">ca-app-pub-1535090114126115/8650378842</string>
+    <string name="Interstitial_add_id_4">ca-app-pub-1535090114126115/8203548484</string>
+    <string name="Interstitial_add_id_5">ca-app-pub-1535090114126115/5002670076</string>
+
+    <string name="Interstitial_add_id_frag">ca-app-pub-1535090114126115/5038484629</string>
+    <string name="Interstitial_add_id_frag_2">ca-app-pub-1535090114126115/1421575767</string>
+    <string name="Interstitial_add_id_frag_3">ca-app-pub-1535090114126115/7712749423</string>
+    <string name="Interstitial_add_id_frag_4">ca-app-pub-1535090114126115/9392716502</string>
+    <string name="Interstitial_add_id_frag_5">ca-app-pub-1535090114126115/3065829924</string>
+
+
+    <string name="Native_add_id">ca-app-pub-1535090114126115/9236730451</string>
+    <string name="Native_add_id_1_2">ca-app-pub-1535090114126115/6610567117</string>
+    <string name="Native_add_id_1_3">ca-app-pub-1535090114126115/5612054482</string>
+    <string name="Native_add_id_1_4">ca-app-pub-1535090114126115/3240610814</string>
+
+
+    <string name="Native_add_medium_id">ca-app-pub-1535090114126115/5105913754</string>
+    <string name="Native_add_medium_id_2">ca-app-pub-1535090114126115/3780389648</string>
+    <string name="Native_add_medium_id_3">ca-app-pub-1535090114126115/5364959701</string>
+    <string name="Native_add_medium_id_4">ca-app-pub-1535090114126115/5100487394</string>
+
+
+    <string name="Native_add_small_id">ca-app-pub-1535090114126115/5945967106</string>
+    <string name="Native_add_small_id_2">ca-app-pub-1535090114126115/4148055304</string>
+    <string name="Native_add_small_id_3">ca-app-pub-1535090114126115/5329300683</string>
+    <string name="Native_add_small_id_4">ca-app-pub-1535090114126115/2895381487</string>
+
+    <string name="Rewarded_ad_id_3">ca-app-pub-1535090114126115/1783011767</string>
+    <string name="Rewarded_ad_id_4">ca-app-pub-1535090114126115/1790002197</string>
+    <string name="Rewarded_ad_id_5">ca-app-pub-1535090114126115/3190491032</string>
+    <string name="Rewarded_ad_id_6">ca-app-pub-1535090114126115/4179870540</string>
+    <string name="Rewarded_ad_id_7">ca-app-pub-1535090114126115/4226389423</string>
+
+
+    <string name="Open_ad_id">ca-app-pub-1535090114126115/4316581856</string>
+    <string name="Open_ad_id_2">ca-app-pub-1535090114126115/6880472921</string>
+    <string name="Open_ad_id_3">ca-app-pub-1535090114126115/8879595084</string>
+    <string name="Open_ad_id_4">ca-app-pub-1535090114126115/2595998585</string>
+
+
+    <string name="app_id_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_add_id_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Interstitial_add_id_test">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="sdkKey">tq6OdxwX0ZGCZ9n69Sa76rJ2ATvWr4fruxG_gJFerEKLK3TAmyZlRW8VgJ2y886LBG7IAOTZJguPJW7gzTmJ7a</string>
+    <string name="banner_max_id">b73cdc8cb934ecb1</string>
+    <string name="Interstitial_max_id">138a4899b6029ef7</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="free_des">Get predictions for the various NLA games from monday special to sunday aseda for free, numbers released here are randomly generated and you are advised to use them with careful consideration.
+    </string>
+
+    <string name="vip_des">Subscribe to our various packages from 1 month to 1 year which allows you to disable ad units for the time period you have chosen and enjoy an ad free experience.
+    </string>
+
+    <string name="watch_des">Watch videos and get free Sure Bankers for the various NLA games from Monday special to sunday aseda, numbers released here are carefully generated, you are advised to use the numbers with careful consideration.
+    </string>
+
+    <string name="message_delete">Messages that are older than two weeks will deleted periodically.</string>
+
+</resources>

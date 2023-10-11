@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/main_page_toolbar">
+        </include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/input"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#A8ECE5"
+                android:padding="5dp"
+                android:id="@+id/predict">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Prediction"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_toEndOf="@+id/predict"
+                android:padding="5dp"
+                android:id="@+id/today">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Today's No"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/today"
+                android:background="#A8ECE5"
+                android:padding="5dp"
+                android:id="@+id/history">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="History No"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/today"
+                android:background="#A8ECE5"
+                android:padding="5dp"
+                android:id="@+id/today_lay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Today...."/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/today"
+                android:layout_toEndOf="@+id/today_lay"
+                android:background="#A8ECE5"
+                android:padding="5dp"
+                android:id="@+id/other_lay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Others...."/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/today"
+                android:layout_toEndOf="@+id/other_lay"
+                android:background="#A8ECE5"
+                android:padding="8dp"
+                android:id="@+id/sure_lay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Sure...."/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_lay"
+                android:layout_below="@+id/today_lay">
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/date"
+                    android:hint="date..."
+                    android:padding="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/day"
+                    android:hint="day..."
+                    android:padding="4dp"
+                    android:layout_toEndOf="@+id/date"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/lotto1"
+                    android:hint="lotto1..."
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_below="@+id/day"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/lotto2"
+                    android:hint="lotto2"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_below="@+id/lotto1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/lotto3"
+                    android:hint="lotto3"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_below="@+id/lotto2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/lotto4"
+                    android:hint="lotto4"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_below="@+id/lotto3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/lotto5"
+                    android:hint="lotto5"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_below="@+id/lotto4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:id="@+id/days"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lotto5"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="days..."
+                    android:padding="4dp" />
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mach1"
+                    android:hint="mach1"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_toEndOf="@+id/lotto1"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/day"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mach2"
+                    android:hint="mach2"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_toEndOf="@+id/lotto2"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/mach1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mach3"
+                    android:hint="mach3"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_toEndOf="@+id/lotto3"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/mach2"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mach4"
+                    android:hint="mach4"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_toEndOf="@+id/lotto4"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/mach3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mach5"
+                    android:hint="mach5"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:layout_toEndOf="@+id/lotto5"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/mach4"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:id="@+id/event"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/mach5"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toEndOf="@+id/lotto5"
+                    android:hint="yest..."
+                    android:padding="4dp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/order"
+                    android:hint="order"
+                    android:padding="4dp"
+                    android:inputType="date"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/lotto5"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Monday, NTuesday, oWednesday, pThursday, qFriday, rSaturday"
+                android:layout_below="@+id/edit_lay"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_lay"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/history_button"
+                android:padding="4dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="#3563AA"
+                android:visibility="gone"
+                android:text="History Button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_lay"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/input_button"
+                android:padding="4dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="#3563AA"
+                android:visibility="visible"
+                android:text="Today's Button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/live_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_lay"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#3563AA"
+                android:padding="4dp"
+                android:text="Live"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_lay"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/today_button"
+                android:padding="4dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="#3563AA"
+                android:visibility="gone"
+                android:text="Today"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_lay"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/predict_button"
+                android:padding="4dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="#3563AA"
+                android:visibility="gone"
+                android:text="Prediction Button"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_lay"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/sure_button"
+                android:padding="4dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="#3563AA"
+                android:visibility="gone"
+                android:text="Sure"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SignUp"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:hint="email..."
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/email"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:inputType="textPassword"
+                android:hint="password..."
+                android:padding="4dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/password"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/send"
+                android:padding="4dp"
+                android:elevation="3dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null"
+                android:background="#3563AA"
+                android:text="Send"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
